@@ -20,7 +20,6 @@ jobs:
         sudo apt update
         sudo apt install -y \
           python3-pip \
-          python3-venv \
           python3-dev \
           openjdk-17-jdk \
           git \
@@ -32,7 +31,6 @@ jobs:
           zlib1g-dev \
           libncurses5-dev \
           libncursesw5-dev \
-          libtinfo5 \
           cmake \
           libffi-dev \
           libssl-dev \
