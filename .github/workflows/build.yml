@@ -51,11 +51,12 @@ jobs:
       run: buildozer --version
     
     - name: Build APK
-      run: |
-        buildozer android debug --verbose 2>&1 | head -2000
+      run: buildozer android debug --verbose
+    
+    - name: List bin directory
+      run: ls -la bin/ || echo "bin directory not found"
     
     - name: Upload APK
-      if: success()
       uses: actions/upload-artifact@v4
       with:
         name: prts-apk
