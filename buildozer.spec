@@ -77,20 +77,20 @@ use_virtualenv = True
 # 使用的Python版本
 python_version = 3.10
 
-# 目标Android API版本（Android 13）
-android.api = 33
+# 目标Android API版本（Android 12）
+android.api = 31
 
 # 最低Android API版本（Android 5.0）
 android.minapi = 21
 
 # SDK版本
-android.sdk = 33
+android.sdk = 31
 
 # NDK版本
 android.ndk = 25b
 
 # 安卓ABI架构（arm64-v8a为现代手机，armeabi-v7a为兼容旧手机）
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = arm64-v8a
 
 # 是否保留旧的构建缓存（0为每次清理，1为保留）
 android.allow_backup = 1
