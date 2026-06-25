@@ -47,16 +47,19 @@ jobs:
         pip install --upgrade pip setuptools wheel
         pip install buildozer cython==3.0.10
     
-    - name: Show buildozer version
-      run: buildozer --version
+    - name: Initialize Buildozer
+      run: buildozer init || true
     
     - name: Build APK
-      run: buildozer android debug --verbose
+      run: buildozer android debug
+      timeout-minutes: 120
     
     - name: List bin directory
+      if: always()
       run: ls -la bin/ || echo "bin directory not found"
     
     - name: Upload APK
+      if: success()
       uses: actions/upload-artifact@v4
       with:
         name: prts-apk
