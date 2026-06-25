@@ -14,6 +14,7 @@ source.dir = .
 
 # 主Python文件
 source.include_exts = py,png,jpg,kv,atlas,ttf,json
+main.py = main.py
 
 # 版本号
 version = 1.0.0
@@ -52,12 +53,7 @@ requirements = python3,kivy==2.2.1,requests,urllib3,certifi,charset-normalizer,i
 # requirements = python3,kivy,numpy,pillow
 
 # 排除不需要的文件
-source.exclude_patterns = 
-    license,
-    images/*,
-    *.spec,
-    .git,
-    buildozer.spec
+source.exclude_patterns = license,images/*,.git
 
 [buildozer]
 
