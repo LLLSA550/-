@@ -47,7 +47,7 @@ orientation = portrait
 #android.ndk = 25b
 
 # 需要的Python包（按需添加）
-requirements = python3,kivy==2.2.1,requests,urllib3,certifi,charset-normalizer,idna
+requirements = python3,kivy==2.2.1
 
 # 如果你的app用了其他库，比如numpy, pillow等，在这里添加
 # requirements = python3,kivy,numpy,pillow
